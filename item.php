@@ -33,7 +33,7 @@ $pageTitle = $item ? $item['title'] : 'Not Found';
 <body>
   <div id="container" class="container">
     <header class="page-header">
-      <h1>Antiques Gallery</h1>
+			<h1><a href="index.php">Antiques Gallery</a></h1>
     </header>
     <article id="item-container">
       <?php if ($item): ?>
@@ -58,7 +58,7 @@ $pageTitle = $item ? $item['title'] : 'Not Found';
         </p>
         <p class="description"><?= nl2br(htmlspecialchars($item['description'])); ?></p>
         <div class="item-info">
-          <h3>Dimensions</h3>
+          <h3>Dimensions:</h3>
           <p class="dimensions">
             <strong>Width: </strong><span><?= number_format($item['width'], 2); ?> in.</span>
             <br>
